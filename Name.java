@@ -1,0 +1,19 @@
+//Take an array of names as input from the user and print them on the screen.
+import java.util.*;
+public class Name {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of names you want to input");
+        int n = sc.nextInt();
+        String[] names = new String[n];
+        System.out.println("Enter the names");
+        for(int i=0; i<n; i++){
+            names[i]= sc.next();
+        }
+        for(int i=0; i<n; i++){
+            System.out.println(names[i]);
+        }
+        sc.close();
+    }
+    
+}
